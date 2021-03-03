@@ -12,3 +12,7 @@ puts 4 * 4
 puts 5 / 5
 
 puts "2 + 2 = " + 4.to_s
+
+name = "Tanaka"
+
+puts "Hello!! #{name}"
