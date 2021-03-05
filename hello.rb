@@ -17,12 +17,10 @@
 
 # puts "Hello!! #{name}"
 
-def disp_sum
-  price = 1980
-  sum = 3
+def disp_sum(price = 1980, sum = 20)
 
   #return を記述
-  return "商品の購入数は0以上にしてください" if sum <= 0
+  return "商品の購入数は0以上にしてください:入力値 #{sum}" if sum <= 0
 
  "#{price}円の商品を#{sum}個買ったので、合計#{price * sum}円になります"
 
