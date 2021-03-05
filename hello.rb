@@ -30,8 +30,34 @@ end
 
 #繰り返し処理
 
-users = ["satou", "tanaka", "yamada", "shimizu"]
+users = ["satou", "tanaka", "yamada", "shimizu", "nishimoto", "kudou"]
+
+users.shuffle!
+
+team_a = []
+team_b = []
+
+# users.each.with_index(1) do |user, i|
+#   puts "会員番号No.#{i} #{user}さん、こんにちは！"
+# end
 
 users.each.with_index(1) do |user, i|
-  puts "会員番号No.#{i} {user}さん、こんにちは！"
+  if i.odd?
+    team_a << user
+  else
+    team_b << user
+  end
 end
+
+
+text = "チームA\n"
+team_a.each do |user|
+  text += "#{user}さん"
+end
+
+text += "\nチームB\n"
+team_b.each do |user|
+  text += "#{user}さん"
+end
+
+puts text
