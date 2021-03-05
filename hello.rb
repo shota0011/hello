@@ -26,4 +26,12 @@ def disp_sum(price = 1980, sum = 20)
 
 end
 
-puts disp_sum
+# puts disp_sum
+
+#繰り返し処理
+
+users = ["satou", "tanaka", "yamada", "shimizu"]
+
+users.each.with_index(1) do |user, i|
+  puts "会員番号No.#{i} {user}さん、こんにちは！"
+end
