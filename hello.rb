@@ -94,4 +94,11 @@ team_b.each do |user|
   text += "#{user}さん"
 end
 
-puts text
+# puts text
+
+["satou", "tanaka", "katou", "shimizu"].each { |name| puts "#{name}さん、こんにちは！" }
+
+params = { "name" => "tanaka", "email" => "hoge@example.com", "password" => "pass1234" }
+
+puts params.invert
+
