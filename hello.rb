@@ -60,4 +60,38 @@ team_b.each do |user|
   text += "#{user}さん"
 end
 
+# puts text
+
+ages = [29, 35 , 37, 42, 93]
+
+ages.each.with_index(1) do |age, i|
+   "番号#{i} 私は#{age}歳です。"
+end
+
+#サンプルプログラム
+user_list = ["Yanagi", "Saitou", "Aoyagi", "Imai", "Obata", "Takahashi"]
+
+user_list.shuffle!
+
+team_a = []
+team_b = []
+
+user_list.each.with_index(1) do |user, i|
+  if i.odd?
+    team_a << user
+  else
+    team_b << user
+  end
+end
+
+text = "team_a\n"
+team_a.each do |user|
+  text += "#{user}さん"
+end
+
+text += "\nteam_b\n"
+team_b.each do |user|
+  text += "#{user}さん"
+end
+
 puts text
