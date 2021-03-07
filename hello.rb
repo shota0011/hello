@@ -101,4 +101,4 @@ end
 params = { "name" => "tanaka", "email" => "hoge@example.com", "password" => "pass1234" }
 
 puts params.invert
-
+#ハッシュ
