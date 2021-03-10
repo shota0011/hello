@@ -14,3 +14,6 @@ car = Car.new
 # Carクラスのcolorにredを代入（セッターを利用）
 car.color = "red"
 puts car.color
+
+# 繰り返し処理の復習
+
